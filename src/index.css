@@ -144,6 +144,10 @@ footer button:hover {
 }
 
 .descriptionTitle {
+  font-weight: 600;
+}
+
+.descriptionDate {
   font-size: 1.1rem;
   font-weight: 200;
 }
