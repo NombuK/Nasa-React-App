@@ -4,7 +4,7 @@ export default function Footer(props) {
   return (
     <footer>
       <div className="bgGradient"></div>
-      <div>
+      <div className="titleBg">
         <h1>APOD PROJECT</h1>
         <h2>{data?.title}</h2>
       </div>

@@ -53,11 +53,9 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  /*color: rgba(9, 68, 177, 0.829);*/
   color: black;
   text-shadow: 5px 5px 10px;
   display: flex;
-
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
@@ -89,10 +87,27 @@ footer button {
 
 footer button i {
   font-size: 1.3rem;
+  animation: pop 1.5s ease-in-out infinite;
 }
 
 footer button:hover {
   opacity: 0.7;
+}
+
+.titleBg {
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 30px rgba(227, 228, 237, 0.37);
+  border: 2px rgba(225, 225, 225, 0.18);
+  border-radius: 5px;
+  background-size: contain;
+  padding: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.titleBg:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(227, 228, 237, 0.57);
 }
 
 .sidebar {
@@ -174,6 +189,18 @@ footer button:hover {
   opacity: 0.2;
   font-size: 3rem;
   animation: spin 1s linear infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes spin {
